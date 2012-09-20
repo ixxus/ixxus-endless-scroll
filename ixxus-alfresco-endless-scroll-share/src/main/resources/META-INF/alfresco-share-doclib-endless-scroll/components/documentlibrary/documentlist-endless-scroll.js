@@ -116,9 +116,9 @@ if (typeof Ixxus == "undefined" || !Ixxus)
 			Alfresco.logger.debug("InitializeTable " +scope.currentFilter.filterId+" "+scope.currentFilter.filterData );
 			//if this is not the first page we need to change to the first page
 			//also need to detect if its a change of filter not page
-			if( scope.currentPage && parseInt(scope.currentPage)!=1 && scope.oldFilter && scope.oldFilter!=scope.currentFilter.filterData){
-				scope.widgets.paginator.setPage(1);
-			}
+			//if( scope.currentPage && parseInt(scope.currentPage)!=1 && scope.oldFilter && scope.oldFilter==scope.currentFilter.filterData){
+			//	scope.widgets.paginator.setPage(1);
+			//}
 			scope.widgets.dataTable.onDataReturnInitializeTable.call(scope.widgets.dataTable, sRequest, oResponse, oPayload);	
 		}
         scope.oldFilter = scope.currentFilter.filterData;
