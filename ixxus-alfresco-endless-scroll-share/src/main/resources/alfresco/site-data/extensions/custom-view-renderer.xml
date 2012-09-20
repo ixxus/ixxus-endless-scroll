@@ -1,0 +1,14 @@
+<extension>
+    <modules>
+        <module>
+            <id>Ixxus :: Document List Endless Scroll View</id>
+            <auto-deploy>true</auto-deploy>
+            <customizations>
+                <customization>
+                    <targetPackageRoot>org.alfresco</targetPackageRoot>
+                    <sourcePackageRoot>com.ixxus.alfresco-share-doclib-endless-scroll</sourcePackageRoot>
+                </customization>
+            </customizations>
+        </module>
+    </modules>
+</extension>
