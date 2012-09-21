@@ -37,6 +37,24 @@
 					</execution>
 				</executions>
 			</plugin>
+		    <plugin>
+		      <groupId>org.codehaus.mojo</groupId>
+		      <artifactId>jslint-maven-plugin</artifactId>
+		      <version>1.0.1</version>
+		      <configuration>
+		      	<sourceJsFolder>src\main\resources\META-INF\alfresco-share-doclib-endless-scroll\components</sourceJsFolder>
+		      	<allowOneVarStatementPerFunction>false</allowOneVarStatementPerFunction>
+		      	<predefinedVars>Ixxus,Alfresco,document,window,YAHOO</predefinedVars>
+		      </configuration>
+		      <executions>
+		        <execution>
+		          <goals>
+		            <goal>jslint</goal>
+		            <goal>test-jslint</goal>
+		          </goals>
+		        </execution>
+		      </executions>
+		    </plugin>
 		</plugins>
 	</build>
 
