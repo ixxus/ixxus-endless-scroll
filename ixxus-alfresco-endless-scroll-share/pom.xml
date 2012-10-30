@@ -5,13 +5,28 @@
 	<parent>
 		<groupId>com.ixxus.alfresco</groupId>
 		<artifactId>ixxus-alfresco-endless-scroll</artifactId>
-		<version>4.0.2.1.0-SNAPSHOT</version>
+		<version>4.1.1.1.0-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.ixxus.alfresco</groupId>
 	<artifactId>ixxus-alfresco-endless-scroll-share</artifactId>
 	<packaging>jar</packaging>
 
+ <scm>
+    <connection>scm:git:ssh://git@github.com/ixxus/ixxus-endless-scroll.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/ixxus/ixxus-endless-scroll.git</developerConnection>
+    <url>https://github.com/ixxus/ixxus-endless-scroll.git</url>
+  </scm>
+<distributionManagement>
+    <repository>
+      <id>ixxus-releases</id>
+      <url>http://172.16.10.149:8081/nexus/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>ixxus-snapshots</id>
+      <url>http://172.16.10.149:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
@@ -61,8 +76,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.ixxus.alfresco</groupId>
-			<artifactId>share-sdk</artifactId>
-			<version>4.0.2.0.0.1</version>
+			<artifactId>ixxus-share-sdk</artifactId>
+			<version>4.1.1.0.1.5</version>
 			<type>pom</type>
 			<scope>provided</scope>
 		</dependency>
