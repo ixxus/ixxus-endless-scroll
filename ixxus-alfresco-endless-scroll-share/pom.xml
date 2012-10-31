@@ -11,11 +11,6 @@
 	<artifactId>ixxus-alfresco-endless-scroll-share</artifactId>
 	<packaging>jar</packaging>
 
- 	<scm>
-    	<connection>scm:git:ssh://git@github.com/ixxus/ixxus-endless-scroll.git</connection>
-    	<developerConnection>scm:git:ssh://git@github.com/ixxus/ixxus-endless-scroll.git</developerConnection>
-    	<url>https://github.com/ixxus/ixxus-endless-scroll.git</url>
-  	</scm>
 	<build>
 		<plugins>
 			<plugin>
