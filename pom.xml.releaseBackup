@@ -5,26 +5,16 @@
 
     <groupId>com.ixxus.alfresco</groupId>
     <artifactId>ixxus-alfresco-endless-scroll</artifactId>
-    <version>4.1.1.1.0</version>
+    <version>4.1.1.1.0-SNAPSHOT</version>
 	<name>Endless Scroll for Alfresco Share</name>
 	<description>Share DocumentLibrary view renderer that provides endless scroll capabilities</description>	
 
 	<packaging>pom</packaging>
 
 	<!-- The  project moudles -->
-  	<modules>
-    	<module>ixxus-alfresco-endless-scroll-share</module>
-  	</modules>
-  	<distributionManagement>
-    	<repository>
-      		<id>ixxus-releases</id>
-      		<url>http://172.16.10.149:8081/nexus/content/repositories/releases</url>
-    	</repository>
-    	<snapshotRepository>
-      		<id>ixxus-snapshots</id>
-      		<url>http://172.16.10.149:8081/nexus/content/repositories/snapshots</url>
-    	</snapshotRepository>
-  	</distributionManagement>
+  <modules>
+    <module>ixxus-alfresco-endless-scroll-share</module>
+  </modules>
   	<scm>
 		<connection>scm:git:ssh://git@github.com/ixxus/ixxus-endless-scroll.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/ixxus/ixxus-endless-scroll.git</developerConnection>
@@ -70,6 +60,17 @@
 			<url>http://beardedgeeks.googlecode.com/svn/repository/releases</url>
 		</pluginRepository>
 	</pluginRepositories>
+	
+	<distributionManagement>
+		<repository>
+			<id>ixxus-releases</id>
+			<url>http://172.16.10.149:8081/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>ixxus-nexus-snapshots</id>
+			<url>http://172.16.10.149:8081/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<!-- Common properties -->
 	<properties>
