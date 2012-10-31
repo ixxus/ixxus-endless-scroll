@@ -65,10 +65,6 @@
 				<updatePolicy>daily</updatePolicy>
 			</snapshots>
 		</pluginRepository>
-		<pluginRepository>
-			<id>beardedgeeks-releases</id>
-			<url>http://beardedgeeks.googlecode.com/svn/repository/releases</url>
-		</pluginRepository>
 	</pluginRepositories>
 
 	<!-- Common properties -->
