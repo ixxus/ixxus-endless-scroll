@@ -152,8 +152,12 @@ if (typeof Ixxus === "undefined" || !Ixxus) {
 			scope.updateInitiated = false;
 			Event.removeListener(window, "scroll", this._handleScroll);
 			//re-display the paginator
-			Dom.setStyle(scope.id + "-paginator", "display", "block");
-			Dom.setStyle(scope.id + "-paginatorBottom", "display", "block");
+			Dom.setAttribute(scope.id + "-paginator", "style", "visibility:visible");
+            Dom.setAttribute(scope.id + "-paginatorBottom", "style", "visibility:visible");
+		} else {
+			//hide the paginators
+			Dom.setAttribute(scope.id + "-paginator", "style", "visibility:hidden");
+            Dom.setAttribute(scope.id + "-paginatorBottom", "style", "visibility:hidden");
 		}
 		Dom.setStyle(scope.id + this.parentElementIdSuffix, 'display', 'none');
 	};
