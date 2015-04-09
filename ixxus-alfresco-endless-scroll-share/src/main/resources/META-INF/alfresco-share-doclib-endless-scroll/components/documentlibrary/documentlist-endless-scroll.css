@@ -1,10 +1,16 @@
 .doclist .simple-detailed .endless-view span.first-child
 {
-    background-image: url(images/table-view-on-16.png);
+    background-image: url(images/endless-view-off-16.png);
 }
+
 .doclist .simple-detailed .endless-view.yui-button-checked span.first-child
 {
-    background-image: url(images/table-view-on-16.png);
+    background-image: url(images/endless-view-on-16.png);
+}
+
+.toolbar .options-select .endless > a > span.view
+{
+   background-image: url(images/endless-view-off-16.png);
 }
 
 .loadingDiv

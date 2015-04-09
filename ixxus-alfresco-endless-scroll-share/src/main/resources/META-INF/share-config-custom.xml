@@ -14,8 +14,9 @@
       <view-renderers>
 	     <view-renderer id="endless" iconClass="endless" label="button.view.endless" index="10" widget="Alfresco.DocumentListSimpleViewRenderer">
             <dependencies>
-               <js src="components/documentlibrary/documentlist-endless-scroll.js" />
-               <css src="components/documentlibrary/documentlist-endless-scroll.css" />
+               <js src="components/documentlibrary/documentlist-view-detailed.js" />
+               <js src="alfresco-share-doclib-endless-scroll/components/documentlibrary/documentlist-endless-scroll.js" />
+               <css src="alfresco-share-doclib-endless-scroll/components/documentlibrary/documentlist-endless-scroll.css" />
             </dependencies>
          </view-renderer>
       </view-renderers>
