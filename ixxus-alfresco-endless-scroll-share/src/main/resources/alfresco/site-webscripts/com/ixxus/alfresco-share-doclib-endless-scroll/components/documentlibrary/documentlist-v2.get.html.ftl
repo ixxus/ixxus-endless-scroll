@@ -1,3 +1,10 @@
+<@markup id="endlessDocLibCss" target="css" action="after">
+   <link rel="stylesheet" type="text/css" href="${page.url.context}/res/alfresco-share-doclib-endless-scroll/components/documentlibrary/documentlist-endless-scroll.css" />
+</@>
+<@markup id="endlessDocLibJs" target="js" action="after">
+	<script type="text/javascript" src="${page.url.context}/res/alfresco-share-doclib-endless-scroll/components/documentlibrary/documentlist-endless-scroll.js"></script>
+</@>
+
 <@markup id="endlessDocLibView" target="documentListContainer" action="after">
     <script type="text/javascript">
         if (document.getElementsByClassName("paginator") && document.getElementsByClassName("paginator")[0])
