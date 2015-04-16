@@ -16,14 +16,11 @@
     	<module>ixxus-alfresco-endless-scroll-share</module>
   	</modules>
   	<distributionManagement>
-    	<repository>
-      		<id>ixxus-releases</id>
-      		<url>http://172.16.10.149:8081/nexus/content/repositories/releases</url>
-    	</repository>
-    	<snapshotRepository>
-      		<id>ixxus-snapshots</id>
-      		<url>http://172.16.10.149:8081/nexus/content/repositories/snapshots</url>
-    	</snapshotRepository>
+   	    <repository>
+	   		 <id>oup-releases</id>
+	    	 <name>OUP releases</name>
+	  		 <url>https://nexoup.ixxus.co.uk/content/repositories/releases/</url>
+	    </repository>
   	</distributionManagement>
   	<scm>
 		<connection>scm:git:ssh://git@github.com/ixxus/ixxus-endless-scroll.git</connection>
