@@ -1,0 +1,25 @@
+<alfresco-config>
+
+   <!-- Document Library config section -->
+   <config evaluator="string-compare" condition="DocumentLibraryViews" >
+         <!-- The view renderers that will be available as options in DocumentLibrary, My Files, Shared Files and 
+              Repository pages. This list can be added to or removed to control the views displayed. Use the a module
+              that provides evaluated configuration to have the options change based on criteria (e.g. site name, 
+              site preset, user group, etc)
+              
+              Remember to include all dependencies, even those duplicated by another view - Surf will ensure only 
+              one version of each is loaded - but if a view is removed that depends on a dependency defined in another
+              view then it will cause an error. 
+           -->
+      <view-renderers>
+	     <view-renderer id="endless" iconClass="endless" label="button.view.endless" index="10" widget="Alfresco.DocumentListSimpleViewRenderer">
+            <dependencies>
+               <js src="components/documentlibrary/documentlist-view-detailed.js" />
+               <js src="alfresco-share-doclib-endless-scroll/components/documentlibrary/documentlist-endless-scroll.js" />
+               <css src="alfresco-share-doclib-endless-scroll/components/documentlibrary/documentlist-endless-scroll.css" />
+            </dependencies>
+         </view-renderer>
+      </view-renderers>
+   </config>
+
+</alfresco-config>

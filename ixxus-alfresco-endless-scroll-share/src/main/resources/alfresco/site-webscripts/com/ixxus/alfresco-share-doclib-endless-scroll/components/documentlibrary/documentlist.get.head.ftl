@@ -1,2 +1,0 @@
-<link rel="stylesheet" type="text/css" href="${page.url.context}/res/alfresco-share-doclib-endless-scroll/components/documentlibrary/documentlist-endless-scroll.css" />
-<script type="text/javascript" src="${page.url.context}/res/alfresco-share-doclib-endless-scroll/components/documentlibrary/documentlist-endless-scroll.js"></script>

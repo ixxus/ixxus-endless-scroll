@@ -5,16 +5,29 @@
 
     <groupId>com.ixxus.alfresco</groupId>
     <artifactId>ixxus-alfresco-endless-scroll</artifactId>
-    <version>4.0.2.1.0-SNAPSHOT</version>
+    <version>5.0.1.0.3-SNAPSHOT</version>
 	<name>Endless Scroll for Alfresco Share</name>
 	<description>Share DocumentLibrary view renderer that provides endless scroll capabilities</description>	
 
 	<packaging>pom</packaging>
 
 	<!-- The  project moudles -->
-  <modules>
-    <module>ixxus-alfresco-endless-scroll-share</module>
-  </modules>
+  	<modules>
+    	<module>ixxus-alfresco-endless-scroll-share</module>
+  	</modules>
+  	<distributionManagement>
+   	    <repository>
+	   		 <id>oup-releases</id>
+	    	 <name>OUP releases</name>
+	  		 <url>https://nexoup.ixxus.co.uk/content/repositories/releases/</url>
+	    </repository>
+  	</distributionManagement>
+  	<scm>
+		<connection>scm:git:ssh://git@github.com/ixxus/ixxus-endless-scroll.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/ixxus/ixxus-endless-scroll.git</developerConnection>
+		<url>https://github.com/ixxus/ixxus-endless-scroll.git</url>
+	  <tag>HEAD</tag>
+  </scm>
 
 	<!-- The required repositories for the project -->
 	<repositories>
@@ -50,10 +63,6 @@
 				<updatePolicy>daily</updatePolicy>
 			</snapshots>
 		</pluginRepository>
-		<pluginRepository>
-			<id>beardedgeeks-releases</id>
-			<url>http://beardedgeeks.googlecode.com/svn/repository/releases</url>
-		</pluginRepository>
 	</pluginRepositories>
 
 	<!-- Common properties -->
@@ -62,7 +71,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.version>3.0.5.RELEASE</spring.version>					<!-- For Alfresco 3.4.x use 3.0.0.RELEASE -->
-        <alfresco.version>4.0.2</alfresco.version>
+        <alfresco.version>5.0.1</alfresco.version>
         <alfresco.groupId>org.alfresco</alfresco.groupId>  	<!-- Use "org.alfresco" for community artifacts -->
         <skip.functional.tests>true</skip.functional.tests>
     </properties>
@@ -109,7 +118,12 @@
 							</goals>
 						</execution>
 					</executions>
-				</plugin>			
+				</plugin>	
+				<plugin>
+				   <groupId>org.apache.maven.plugins</groupId>
+				   <artifactId>maven-release-plugin</artifactId>
+				   <version>2.5</version>
+			    </plugin>		
             </plugins>
         </pluginManagement>
     </build>
