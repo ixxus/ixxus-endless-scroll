@@ -5,7 +5,7 @@
 
     <groupId>com.ixxus.alfresco</groupId>
     <artifactId>ixxus-alfresco-endless-scroll</artifactId>
-    <version>5.0.1.0.4-SNAPSHOT</version>
+    <version>5.0.1.0.3-SNAPSHOT</version>
 	<name>Endless Scroll for Alfresco Share</name>
 	<description>Share DocumentLibrary view renderer that provides endless scroll capabilities</description>	
 
