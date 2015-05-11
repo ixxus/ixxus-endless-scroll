@@ -5,7 +5,7 @@
 
     <groupId>com.ixxus.alfresco</groupId>
     <artifactId>ixxus-alfresco-endless-scroll</artifactId>
-    <version>5.0.1.0.3</version>
+    <version>5.0.1.0.4-SNAPSHOT</version>
 	<name>Endless Scroll for Alfresco Share</name>
 	<description>Share DocumentLibrary view renderer that provides endless scroll capabilities</description>	
 
@@ -20,7 +20,7 @@
 		<connection>scm:git:ssh://git@github.com/ixxus/ixxus-endless-scroll.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/ixxus/ixxus-endless-scroll.git</developerConnection>
 		<url>https://github.com/ixxus/ixxus-endless-scroll.git</url>
-	  <tag>ixxus-alfresco-endless-scroll-5.0.1.0.3</tag>
+	  <tag>HEAD</tag>
   </scm>
 
     <repositories>
